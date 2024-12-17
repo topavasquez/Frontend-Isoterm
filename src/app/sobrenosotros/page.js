@@ -13,9 +13,9 @@ export default function SobreNosotros() {
             </header>
 
             {/* Imagen destacada */}
-            <div className="relative w-full h-[400px] mt-6">
+            <div className="relative w-full h-[550px] mt-6">
                 <Image
-                    src="/calorfrio.jpg"
+                    src="/aireacondicionados.png"
                     alt="Climatización"
                     layout="fill"
                     objectFit="cover"
