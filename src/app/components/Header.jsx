@@ -11,7 +11,7 @@ const Header = () => {
   ];
 
   return (
-    <header className="w-full my-6 px-2 sm:px-8">
+    <header className="w-full py-6 px-2 sm:px-8">
       <div className="flex sm:px-6 sm:px-14 sm:items-center sm:gap-4">
         <h2 className="flex-1">
           <Link
@@ -23,7 +23,7 @@ const Header = () => {
               <span className="font-bold text-2xl sm:text-1xl text-blue-500">
                 Isoterm
               </span>
-              <span className="font-bold text-2xl sm:text-1xl text-white">
+              <span className="font-bold text-2xl sm:text-1xl text-red-600">
                 Chile
               </span>
             </div>
