@@ -1,9 +1,6 @@
 import { useSpring, animated } from "@react-spring/web";
-        
-        
+          
 const Contador = () => {
-
-    
       const countAnimation1 = useSpring({
         from: { number: 0 },
         number: isClient ? 200 : 0,
