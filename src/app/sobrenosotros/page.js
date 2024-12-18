@@ -5,15 +5,10 @@ import { FaLeaf } from "react-icons/fa";
 
 export default function SobreNosotros() {
     return (
-        <div className="bg-blue-50 min-h-screen rounded-lg">
-            {/* Título principal */}
-            <header className="py-5 text-center">
-                <h1 className="font-bold text-4xl">Sobre Nosotros</h1>
-                <p className="text-lg mt-2">Expertos en soluciones de climatización en Chile</p>
-            </header>
+        <div className=" min-h-screen rounded-lg">
 
             {/* Imagen destacada */}
-            <div className="relative w-full h-[550px] mt-6">
+            <div className="relative w-full h-[550px] ">
                 <Image
                     src="/aireacondicionados.png"
                     alt="Climatización"
@@ -22,7 +17,6 @@ export default function SobreNosotros() {
                     className="rounded-lg shadow-lg"
                 />
             </div>
-
             {/* Sección de información */}
             <section className="py-12 px-6 sm:px-20">
                 <div className="max-w-4xl mx-auto">
@@ -39,7 +33,7 @@ export default function SobreNosotros() {
             </section>
 
             {/* Sección de valores */}
-            <section className="bg-blue-50 py-12">
+            <section className="bg-gray-100 py-12">
                 <div className="max-w-4xl mx-auto px-6 sm:px-20">
                     <h2 className="text-3xl font-semibold text-gray-800 mb-6 text-center">
                         Nuestros Valores
@@ -74,9 +68,9 @@ export default function SobreNosotros() {
             </section>
 
             {/* Llamado a la acción */}
-            <section className="py-12 px-6 sm:px-20">
+            <section className="py-20 px-6 sm:px-20  ">
                 <div className="max-w-4xl mx-auto text-center">
-                    <h2 className="text-3xl font-semibold text-gray-800 mb-4">
+                    <h2 className="text-3xl font-semibold text-gray-800 mb-4 ">
                         ¿Por qué elegirnos?
                     </h2>
                     <p className="text-gray-700 leading-7">
