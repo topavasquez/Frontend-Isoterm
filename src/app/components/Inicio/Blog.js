@@ -8,7 +8,7 @@ export default function Blog() {
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
           {/* Primer artículo */}
-          <article className="bg-white shadow-lg rounded-lg overflow-hidden">
+          <article className="bg-white shadow-lg rounded-lg overflow-hidden hover:scale-105 transition">
             <Image
               src="/1.jpg"
               alt="Boost your conversion rate"
@@ -25,7 +25,7 @@ export default function Blog() {
           </article>
 
           {/* Segundo artículo */}
-          <article className="bg-white shadow-lg rounded-lg overflow-hidden">
+          <article className="bg-white shadow-lg rounded-lg overflow-hidden hover:scale-105 transition">
             <Image
               src="/2.jpg"
               alt="How to use SEO"
@@ -42,7 +42,7 @@ export default function Blog() {
           </article>
 
           {/* Tercer artículo */}
-          <article className="bg-white shadow-lg rounded-lg overflow-hidden">
+          <article className="bg-white shadow-lg rounded-lg overflow-hidden hover:scale-105 transition">
             <Image
               src="/3.jpg"
               alt="Improve your customer experience"

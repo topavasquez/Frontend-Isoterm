@@ -10,20 +10,15 @@ const Header = () => {
       {/* Contenido */}
       <div className="relative z-10 w-full h-full flex flex-col px-4 sm:px-8">
         <div className="flex items-center justify-between sm:px-6 sm:gap-4 mt-4">
+
           {/* Logo */}
-          <h2>
             <a href="/" className="flex sm:flex-row items-center gap-2 sm:gap-6">
               <Image src="/logonegro.png" alt="Logo" width={100} height={100} />
-              <div>
-                <span className="font-bold text-2xl sm:text-3xl text-red-500 hover:text-blue-400 transition-colors">
-                  Isoterm
-                </span>
-                <span className="font-bold text-2xl sm:text-3xl text-blue-600">
-                  Chile
-                </span>
+              <div className="font-bold text-2xl sm:text-3xl">
+                <span className="text-red-500">Isoterm</span>
+                <span className="text-blue-600">Chile</span>
               </div>
             </a>
-          </h2>
 
           {/* Menú para pantallas grandes */}
           <ul className="hidden md:flex flex-row gap-10 lg:gap-12 text-sm md:text-[15px] leading-[22px] text-gray-800">
