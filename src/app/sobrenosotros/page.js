@@ -12,8 +12,8 @@ export default function SobreNosotros() {
                 <Image
                     src="/aireacondicionados.png"
                     alt="Climatización"
-                    layout="fill"
                     objectFit="cover"
+                    fill
                     className="rounded-lg shadow-lg"
                 />
             </div>
