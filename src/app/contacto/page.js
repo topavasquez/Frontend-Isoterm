@@ -55,10 +55,17 @@ export default function Contacto() {
     };
 
     return (
-        <>
-            <div>
-                <Image src={'/banner-contacto.jpg'} alt="Banner" layout="responsive" width={100} height={30}></Image>
+        <div className=" min-h-screen rounded-lg">
+            <div className="relative w-full h-[550px] ">
+                <Image
+                    src='/banner-contacto.jpg'
+                    alt="Climatización"
+                    layout="fill"
+                    objectFit="cover"
+                    className="rounded-lg shadow-lg"
+                />
             </div>
+
             <div className="max-w-7xl mx-auto relative bg-white px-8 sm:px-20 pb-10">
                 <h1 className="text-center font-bold text-3xl py-8 text-blue-600">Contacto</h1>
                 <div className="max-w-4xl mx-auto">
@@ -138,6 +145,6 @@ export default function Contacto() {
                     </div>
                 </div>
             </div>
-        </>
+        </div>
     )
 }
