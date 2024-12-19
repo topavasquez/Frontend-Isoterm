@@ -19,3 +19,25 @@ body {
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+
+@font-face {
+  font-display: block;
+  font-family: "Oswald-Medium";
+  font-weight: 700;
+  src: url("//static.parastorage.com/tag-bundler/api/v1/fonts-cache/googlefont/woff2/s/oswald/v16/dI-qzxlKVQA6TUC5RKSb31tXRa8TVwTICgirnJhmVJw.woff2") format("woff2"),
+  url("//static.parastorage.com/tag-bundler/api/v1/fonts-cache/googlefont/woff/s/oswald/v16/dI-qzxlKVQA6TUC5RKSb3z8E0i7KZn-EPnyo3HZu7kw.woff") format("woff")
+}
+
+@font-face {
+  font-display: block;
+  font-family: 'Oswald';
+  font-style: normal;
+  font-weight: 400;
+  src: url("//static.parastorage.com/tag-bundler/api/v1/fonts-cache/googlefont/woff2/s/oswald/v29/TK3iWkUHHAIjg752FD8Gl-1PK62t.woff2") format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+
+.font-OswaldMedium {
+  font-family: Oswald-Medium,Oswald, sans-serif;
+}
