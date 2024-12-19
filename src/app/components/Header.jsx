@@ -6,14 +6,14 @@ import Image from "next/image";
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   return (
-    <header className="relative w-full">
+    <header className="relative w-full bg-white">
       {/* Contenido */}
       <div className="relative z-10 w-full h-full flex flex-col px-4 sm:px-8">
         <div className="flex items-center justify-between sm:px-6 sm:gap-4 mt-4">
           {/* Logo */}
           <h2>
             <a href="/" className="flex sm:flex-row items-center gap-2 sm:gap-6">
-              <Image src="/logo1.png" alt="Logo" width={100} height={100} />
+              <Image src="/logonegro.png" alt="Logo" width={100} height={100} />
               <div>
                 <span className="font-bold text-2xl sm:text-3xl text-red-500 hover:text-blue-400 transition-colors">
                   Isoterm
