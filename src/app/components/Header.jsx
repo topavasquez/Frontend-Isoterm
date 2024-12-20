@@ -27,14 +27,16 @@ const Header = () => {
               { ref: "/sobrenosotros", label: "Sobre Nosotros" },
               { ref: "/servicios", label: "Servicios" },
               { ref: "/contacto", label: "Contacto" },
+
             ].map(({ ref, label }) => (
-              <li key={ref}>
-                <a href={ref} className="hover:text-gray-400 transition-colors">
-                  {label}
-                </a>
-              </li>
-            ))}
+          <li key={ref}>
+            <a href={ref} className="animated-underline hover:text-blue-400">
+            {label}
+            </a>
+          </li>
+          ))}
           </ul>
+
 
           {/* Botón para menú en móviles */}
           <button
