@@ -25,7 +25,7 @@ const Header = () => {
             {[
               { ref: "/", label: "Inicio" },
               { ref: "/sobrenosotros", label: "Sobre Nosotros" },
-              { ref: "/producto", label: "Productos" },
+              { ref: "/servicios", label: "Servicios" },
               { ref: "/contacto", label: "Contacto" },
             ].map(({ ref, label }) => (
               <li key={ref}>
