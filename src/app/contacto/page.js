@@ -14,7 +14,8 @@ export default function Contacto() {
 
     const onSubmit = async (data) => {
         try {
-            const response = await fetch('http://localhost:4000/api/create', {
+            // Hacer una solicitud POST al backend (API Route)
+            const response = await fetch('/api/send-email', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
@@ -22,31 +23,14 @@ export default function Contacto() {
                 body: JSON.stringify(data),
             });
 
+            // Comprobar si la respuesta es exitosa
             if (!response.ok) {
                 const errorData = await response.json();
-                console.error('Error en el servidor:', errorData);
+                console.error('Error al enviar el correo:', errorData);
                 throw new Error(errorData.error || 'Error desconocido');
             }
 
-            const result = await response.json();
-            console.log('Registro creado con éxito:', result);
-
-            const emailResponse = await fetch('http://localhost:4000/api/send-email', {
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json',
-                },
-                body: JSON.stringify(data),
-            });
-
-            if (!emailResponse.ok) {
-                const errorData = await emailResponse.json();
-                console.error('Error en el servidor al enviar el correo: ', errorData);
-                throw new Error(errorData.error || 'Error desconocido');
-            }
-
-            const emailResult = await emailResponse.json();
-            console.log('Correo enviado correctamente: ', emailResult);
+            console.log('Correos enviados con éxito.');
             reset();
             alert("Solicitud de contacto enviada.");
         } catch (error) {
