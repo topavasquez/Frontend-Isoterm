@@ -22,11 +22,12 @@ const Header = () => {
 
           {/* Menú para pantallas grandes */}
           <ul className="hidden md:flex flex-row gap-10 lg:gap-12 text-sm md:text-[15px] leading-[22px] text-gray-800">
-          {[
-           { ref: "/", label: "Inicio" },
-           { ref: "/sobrenosotros", label: "Sobre Nosotros" },
-           { ref: "/producto", label: "Productos" },
-           { ref: "/contacto", label: "Contacto" },
+            {[
+              { ref: "/", label: "Inicio" },
+              { ref: "/sobrenosotros", label: "Sobre Nosotros" },
+              { ref: "/servicios", label: "Servicios" },
+              { ref: "/contacto", label: "Contacto" },
+
             ].map(({ ref, label }) => (
           <li key={ref}>
             <a href={ref} className="animated-underline hover:text-blue-400">
