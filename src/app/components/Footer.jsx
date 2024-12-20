@@ -29,7 +29,7 @@ const Footer = () => {
                   <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Privacidad</h2>
                   <ul className="text-gray-500 dark:text-gray-400 font-medium">
                       <li className="mb-4">
-                          <a href="#" className="hover:underline">Politica de Privacidad</a>
+                          <a href="/politica" className="hover:underline">Politica de Privacidad</a>
                       </li>
                       <li>
                           <a href="#" className="hover:underline">Terminos &amp; Condiciones</a>
