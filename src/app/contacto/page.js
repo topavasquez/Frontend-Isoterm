@@ -1,9 +1,13 @@
 "use client"
 
+import { useState } from "react"
 import { useForm } from "react-hook-form"
 import Image from "next/image";
 
 export default function Contacto() {
+
+    const [isLoading, setIsLoading] = useState(false);
+
     const {
         register,
         handleSubmit,
@@ -13,6 +17,7 @@ export default function Contacto() {
     } = useForm()
 
     const onSubmit = async (data) => {
+        setIsLoading(true);
         try {
             // Hacer una solicitud POST al backend (API Route)
             const response = await fetch('/api/send-email', {
@@ -35,11 +40,23 @@ export default function Contacto() {
             alert("Solicitud de contacto enviada.");
         } catch (error) {
             console.error('Error al enviar la solicitud:', error.message);
+        } finally {
+            setIsLoading(false);
         }
     };
 
     return (
         <div className=" min-h-screen rounded-lg">
+            {isLoading && (
+                <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
+                    <div className="bg-white p-6 rounded-lg shadow-lg flex flex-col items-center">
+                        {/* Spinner */}
+                        <div className="loader rounded-full border-4 border-blue-600 border-t-transparent h-12 w-12 animate-spin mb-4"></div>
+                        <p className="text-blue-600 font-bold text-xl">Procesando...</p>
+                    </div>
+                </div>
+            )}
+
             <div className="relative w-full h-[550px] ">
                 <Image
                     src='/banner-contacto.jpg'
