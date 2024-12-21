@@ -1,4 +1,4 @@
-import { FcRules, FcSearch, FcAcceptDatabase, FcShare, FcPrivacy, FcConferenceCall, FcExpired, FcAssistant } from "react-icons/fc";
+import { FcRules, FcSearch, FcRightUp, FcAddressBook, FcCancel, FcConferenceCall, FcExpired, FcAssistant } from "react-icons/fc";
 
 export default function Politica() {
     return (
@@ -9,7 +9,7 @@ export default function Politica() {
                 
                 {/* Título principal */}
                 <h1 className="text-center text-3xl my-5 font-bold text-blue-600">
-                    Políticas y Privacidad
+                    Términos y Condiciones
                 </h1>
 
                 <section className="py-5 px-6 sm:px-20">
@@ -17,17 +17,17 @@ export default function Politica() {
                         <div className="flex items-center mb-4">
                             <FcSearch className="text-3xl mr-2" />
                             <h2 className="text-3xl font-semibold text-gray-800">
-                                Recopilación de Información
+                                Uso del Sitio Web
                             </h2>
                         </div>
                         <p className="leading-7 text-justify">
-                            Nuestra página no recopila ni almacena información personal de manera automática. La única información que solicitamos es aquella que tú decides proporcionar voluntariamente al completar el formulario de contacto para que podamos responder a tu solicitud.
-                            Los datos solicitados en el formulario incluyen:
+                            El uso de esta página está destinado exclusivamente para:
                         </p>
                         <ul className="list-disc pl-5">
-                            <li>Nombre</li>
-                            <li>Número de teléfono</li>
+                            <li>Obtener información sobre los productos y servicios de venta y mantención de aires acondicionados.</li>
+                            <li>Contactarnos a través del formulario para consultas o solicitudes.</li>
                         </ul>
+                        <p>El acceso al sitio web no otorga ningún derecho de propiedad sobre sus contenidos.</p>
                     </div>
                 </section>
 
@@ -36,18 +36,18 @@ export default function Politica() {
                         <div className="flex items-center mb-4">
                             <FcRules className="text-3xl mr-2" />
                             <h2 className="text-3xl font-semibold text-gray-800">
-                                Uso de la Información
+                                Servicios Ofrecidos
                             </h2>
                         </div>
                         <p className="leading-7 text-justify">
-                            La información proporcionada será utilizada exclusivamente para:
+                            Ofrecemos servicios de:
                         </p>
                         <ul className="list-disc pl-5">
-                            <li>Atender tu solicitud de contacto.</li>
-                            <li>Proporcionar información relacionada con tus consultas.</li>
+                            <li>Venta de aires acondicionados.</li>
+                            <li>Instalación, mantenimiento y reparación de aires acondicionados.</li>
                         </ul>
                         <p className="pt-3">
-                            Para ejercer estos derechos, puedes contactarnos en isotermtesting@gmail.com.
+                            Toda la información proporcionada en el sitio web es de carácter informativo y puede ser modificada sin previo aviso.
                         </p>
                     </div>
                 </section>
@@ -55,13 +55,13 @@ export default function Politica() {
                 <section className="py-5 px-6 sm:px-20">
                     <div className="max-w-4xl mx-auto">
                         <div className="flex items-center mb-4">
-                            <FcAcceptDatabase className="text-3xl mr-2" />
+                            <FcRightUp className="text-3xl mr-2" />
                             <h2 className="text-3xl font-semibold text-gray-800">
-                                Almacenamiento de Datos
+                                Enlaces a Terceros
                             </h2>
                         </div>
                         <p className="leading-7 text-justify">
-                            La información que compartas a través del formulario de contacto será tratada de forma segura y confidencial. Solo se conservará el tiempo necesario para procesar tu solicitud y no será almacenada en bases de datos una vez cumplido su propósito.
+                            Nuestro sitio puede contener enlaces a sitios web de terceros. No somos responsables del contenido, políticas o prácticas de estos sitios y te recomendamos leer sus términos y condiciones antes de interactuar con ellos.
                         </p>
                     </div>
                 </section>
@@ -69,28 +69,37 @@ export default function Politica() {
                 <section className="py-5 px-6 sm:px-20">
                     <div className="max-w-4xl mx-auto">
                         <div className="flex items-center mb-4">
-                            <FcShare className="text-3xl mr-2" />
+                            <FcAddressBook className="text-3xl mr-2" />
                             <h2 className="text-3xl font-semibold text-gray-800">
-                                Compartición de Datos con Terceros
+                                Proceso de Contacto
                             </h2>
                         </div>
                         <p className="leading-7 text-justify">
-                            No compartimos, vendemos ni transferimos tu información a terceros, salvo que sea requerido por ley o con tu consentimiento expreso.
-                        </p>
+                                El formulario de contacto tiene como único propósito facilitar la comunicación entre el cliente y nuestro equipo. Al enviar una solicitud:
+                            </p>
+                        <ul className="list-disc pl-5">
+                            <li>Te comprometes a proporcionar información veraz y actualizada.</li>
+                            <li>Nos autorizas a contactarte a través de los datos que proporciones.</li>
+                        </ul>
+                        
                     </div>
                 </section>
 
                 <section className="py-5 px-6 sm:px-20">
                     <div className="max-w-4xl mx-auto">
                         <div className="flex items-center mb-4">
-                            <FcPrivacy className="text-3xl mr-2" />
+                            <FcCancel className="text-3xl mr-2" />
                             <h2 className="text-3xl font-semibold text-gray-800">
-                                Seguridad de la Información
+                                Limitación de Responsabilidad
                             </h2>
                         </div>
                         <p className="leading-7 text-justify">
-                            Tomamos las medidas razonables para proteger la información que nos proporcionas, pero recuerda que ningún método de transmisión por Internet o almacenamiento electrónico es 100% seguro.
+                            No nos hacemos responsables por:
                         </p>
+                        <ul className="list-disc pl-5">
+                            <li>Daños directos, indirectos o incidentales derivados del uso de este sitio web.</li>
+                            <li>Errores técnicos o interrupciones en el funcionamiento del sitio.</li>
+                        </ul>
                     </div>
                 </section>
 
@@ -99,22 +108,11 @@ export default function Politica() {
                         <div className="flex items-center mb-4">
                             <FcConferenceCall className="text-3xl mr-2" />
                             <h2 className="text-3xl font-semibold text-gray-800">
-                                Derechos del Usuario
+                                Propiedad Intelectual
                             </h2>
                         </div>
                         <p className="leading-7 text-justify">
-                            Tienes derecho a:
-                        </p>
-                        <ul className="list-disc pl-5">
-                            <li>
-                                Solicitar información sobre cómo utilizamos tus datos.
-                            </li>
-                            <li>
-                                Pedir que eliminemos tus datos una vez cumplido su propósito.
-                            </li>
-                        </ul>
-                        <p>
-                            Para ejercer estos derechos, puedes contactarnos en isotermtesting@gmail.com.
+                            Todos los contenidos de este sitio web, incluidos textos, imágenes, logotipos y diseños, son propiedad de [Nombre de la Página o Empresa] o de sus licenciantes, y están protegidos por las leyes de propiedad intelectual.
                         </p>
                     </div>
                 </section>
@@ -124,11 +122,11 @@ export default function Politica() {
                         <div className="flex items-center mb-4">
                             <FcExpired className="text-3xl mr-2" />
                             <h2 className="text-3xl font-semibold text-gray-800">
-                                Cambios a esta Política de Privacidad
+                                Modificaciones a los Términos y Condiciones
                             </h2>
                         </div>
                         <p className="leading-7 text-justify">
-                            Nos reservamos el derecho de actualizar esta política en cualquier momento. Cualquier cambio será publicado en esta página y tendrá efecto inmediato desde su publicación.
+                        Nos reservamos el derecho de modificar estos términos en cualquier momento. Los cambios serán efectivos a partir de su publicación en esta página.
                         </p>
                     </div>
                 </section>
@@ -142,7 +140,7 @@ export default function Politica() {
                             </h2>
                         </div>
                         <p className="leading-7 text-justify">
-                            Si tienes preguntas o inquietudes sobre nuestra política de privacidad, no dudes en contactarnos a isotermtesting@gmail.com
+                            Si tienes preguntas o inquietudes sobre nuestros términos y condiciones, no dudes en contactarnos a isotermtesting@gmail.com.
                         </p>
                     </div>
                 </section>
