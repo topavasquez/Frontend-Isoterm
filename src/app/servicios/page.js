@@ -1,17 +1,21 @@
+import Venta from "../components/Servicios/Venta"
+import Mantencion from "../components/Servicios/mantencion"
+
 export default function Servicios() {
     return (
-      <section className="bg-gray-100 py-32">
+      <section className="bg-white py-10">
         <div className="max-w-5xl mx-auto px-4">
           <h2 className="text-3xl font-bold text-center mb-8">Nuestros Servicios</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-4">
             {[
-              { title: "Instalación", image: "servicios/instalacion.png" },
-              { title: "Mantención", image: "servicios/mantencion.jpg" },
-              { title: "Reparaciones", image: "servicios/reparacion.jpg" },
-              { title: "Venta", image: "servicios/venta.jpg" },
+              { title: "Instalación", image: "servicios/instalacion.png", link:"#instalacion"},
+              { title: "Mantención", image: "servicios/mantencion.jpg", link:"#mantencion"},
+              { title: "Reparaciones", image: "servicios/reparacion.jpg",link:"#reparaciones" },
+              { title: "Venta", image: "servicios/venta.jpg" ,link:"#venta"},
             ].map((service, index) => (
-              <div
+              <a
                 key={index}
+                href = {service.link} 
                 className="relative group cursor-pointer overflow-hidden rounded-sm shadow-lg w-full h-80 mx-auto"
               >
                 <img
@@ -24,10 +28,12 @@ export default function Servicios() {
                     {service.title}
                   </span>
                 </div>
-              </div>
+              </a>
             ))}
           </div>
         </div>
+        <Venta/>
+        <Mantencion/>
       </section>
     );
   }
