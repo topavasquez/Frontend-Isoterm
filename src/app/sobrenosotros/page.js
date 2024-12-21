@@ -8,9 +8,9 @@ export default function SobreNosotros() {
         <div className=" min-h-screen rounded-lg">
 
             {/* Imagen destacada */}
-            <div className="relative w-full h-[550px] ">
+            <div className="relative w-full h-[600px] ">
                 <Image
-                    src="/aireacondicionados.png"
+                    src="/sobrenosotros.png"
                     alt="Climatización"
                     objectFit="cover"
                     fill
