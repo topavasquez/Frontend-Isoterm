@@ -14,7 +14,7 @@ export default function SobreNosotros() {
                     alt="Climatización"
                     objectFit="cover"
                     fill
-                    className="rounded-lg shadow-lg"
+                    className="shadow-lg"
                 />
             </div>
             {/* Sección de información */}

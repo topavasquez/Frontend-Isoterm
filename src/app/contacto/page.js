@@ -59,11 +59,11 @@ export default function Contacto() {
 
             <div className="relative w-full h-[550px] ">
                 <Image
-                    src='/banner-contacto.jpg'
+                    src='/contactanos.png'
                     alt="Climatización"
                     layout="fill"
                     objectFit="cover"
-                    className="rounded-lg shadow-lg"
+                    className="shadow-lg"
                 />
             </div>
 
